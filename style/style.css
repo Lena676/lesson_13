@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+body {
+    background:url('../img/fon.jpg') 0 0 no-repeat;
+    width: 100%;
+    background-color: rgb(37, 5, 64);
+}
+
+.header__container {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.wrapper {
+	position: relative;
+	min-height: 100%;
+	padding: 50px;
+}
+
+.header{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 15px;
+    background-color: rgba(158, 181, 235, 0.568);
+	z-index: 100;
+}
+
+a {
+    text-decoration:none;
+    color: #fff;
+}
+
+.list__item {
+    position: relative;
+	display: inline-block;
+}
+
+.list__item:not(:last-child){
+	margin-right: 150px;
+}
+
+.list__item:hover .menu {
+    opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+.menu {
+    border-radius: 10px;
+    background-color: rgba(40, 49, 75, 0.545);
+    padding: 15px;
+    position: absolute;
+    min-width: 180px;
+    top: 130%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.list__item-link {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 22px;
+    line-height:50px ;
+    font-weight:700;
+    transition-duration: 0.5s;
+}
+
+.list__item-link:hover {
+    color:crimson ;
+    text-decoration: underline;
+}
+
+.menu__link {
+    display: inline-block;
+    line-height: 120%;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: 400;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+.menu__link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.menu li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.block__link {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+    width: 130px;
+    font-size: 19px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Roboto', cursive;
+    line-height:50px ;
+    font-weight:400;
+    background-color: rgba(0, 0, 0, 0.639);
+}
+
+.block__link:hover {
+    width: 150px;
+    background-color: brown;
+}
+
+/*======main======*/
+
+.main__container {
+    max-width: 1064px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.main__title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    min-height:150px ;
+    width: 100%;
+    background-color: rgba(0, 98, 128, 0.692);
+    border-radius: 50px;
+}
+
+.title__first {
+    text-align: center;
+    font-size: 30px;
+    font-family:cursive;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height:50px ;
+    font-weight:400;
+}
+
+.title__second {
+    text-align: center;
+    color: bisque;
+    font-size: 32px;
+    line-height:50px ;
+    font-weight:700;
+    font-family: 'Roboto', sans-serif;
+}
+
+.after-title {
+    text-align: center;
+    color: bisque;
+    font-size: 17px;
+    line-height:50px ;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: 400;
+    color: #fff;
+}
+
+/*Блоки після заголовка*/
+
+.blocks {}
+
+.style-block {
+}
+/*
+.block__sale {
+    width: 250px;
+    height: 270px;
+    background-color: aquamarine;
+}
+*/
+
+.block__sale {
+    transition: transform 0.3s ease 0s;
+    margin-right: 170px;
+    border-style: double;
+    width:235.18px;
+    height:255.83px;
+    overflow: hidden;
+    display: inline-block;
+    background: url('../img/ichy.png') 0 0 no-repeat;
+}
+
+.block__sale:hover .block__sale-style {
+    transition-delay: 0.3s;
+    transform: translate(0px, 0px);
+}
+
+.block__sale-style {
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    transform: translate(100%, 0%);
+    width: 235.18px;
+    height: 255.83px;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(95, 158, 160, 0.372);
+}
+
+.sale__link {
+    color: rgb(35, 32, 32);
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.sale__link:hover {
+    text-decoration: underline;
+}
+
+
+/*ссилки у блоці*/
+
+.sale__menu {
+    position: relative;
+    top: 30px;
+}
+
+.sale__menu-link {
+    font-size: 19px;
+    font-weight: 700px;
+    color: rgb(255, 255, 255);
+    line-height: 110%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sale__menu-link:hover{
+    text-decoration: underline;
+}
+/*===============*/
+
+.block__present {
+    margin-right: 170px;
+    border-style: double;
+    width:235.18px;
+    height:255.83px;
+    overflow: hidden;
+    display: inline-block;
+    background: url('../img/shampoo.png') 0 0 no-repeat;
+}
+
+.block__present:hover .block__present-on {
+    transition-delay: 0.3s;
+    transform: translate(0px, 0px);
+}
+
+.block__present-on {
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    transform: translate(100%, 0%);
+    width: 235.18px;
+    height: 255.83px;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(123, 83, 43, 0.372);
+}
+
+.present__shampoo {
+    color: rgb(68, 24, 16);
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.present__shampoo:hover {
+    text-decoration: underline;
+}
+
+.present__link {
+    font-size: 19px;
+    font-weight: 700px;
+    color: rgb(255, 255, 255);
+    line-height: 110%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.present__link:hover {
+    text-decoration: underline;
+}
+
+.present__item {
+    position: relative;
+    top: 30px;
+}
+
+.block__makeup {
+    border-style: double;
+    width:235.18px;
+    height:255.83px;
+    overflow: hidden;
+    display: inline-block;
+    background: url('../img/makeup.png') 0 0 no-repeat;
+}
+
+.block__makeup-menu {
+    padding-top: 20px;
+    text-align: center;
+    display: inline-block;
+    transform: translate(100%, 0%);
+    width: 235.18px;
+    height: 255.83px;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(74, 42, 42, 0.372);
+}
+
+.block__makeup:hover .block__makeup-menu {
+    transition-delay: 0.3s;
+    transform: translate(0px, 0px);
+}
+
+.block__link-title {
+    color: rgb(231, 255, 227);
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.block__makeup-link {
+    position: relative;
+    top: 30px;
+}
+
+.link-makeup {
+    font-size: 19px;
+    font-weight: 700px;
+    color: rgb(255, 255, 255);
+    line-height: 110%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.link-makeup:hover {
+    text-decoration: underline;
+}
+
+/*====Фільтр=====*/
+
+.filter-block {
+    margin-bottom: 100px;
+    width:100%;
+    left: 0;
+	top: 0;
+	padding: 15px;
+    background-color: rgba(158, 181, 235, 0.568);
+}
+
+.filter__container {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.filter__list {
+    position: relative;
+	display: inline-block;
+}
+
+.filter__list:not(:last-child){
+	margin-right: 200px;
+}
+
+.filter__title {
+    line-height: 110%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: rgb(51, 39, 39);
+    font-size: 20px;
+}
+
+.filter__link {
+    line-height: 120%;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: 400;
+    color: rgb(51, 39, 39);
+    font-size: 20px;
+}
+
+.product__menu {
+    background-color: rgba(0, 31, 125, 0.927);
+    padding: 15px;
+    position: absolute;
+    min-width: 180px;
+    top: 130%;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.product__link {
+    display: inline-block;
+    line-height: 120%;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: 400;
+    color: #fff;
+    transition-duration: 0.3s;
+}
+
+.product__link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.filter__list:hover .product__menu {
+    opacity: 1;
+	visibility: visible;
+	top: 100%;
+}
+
+.product__menu li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* animation blocks*/
+
+.animation__container {
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+.first__animation {
+    margin-right: 150px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-name: animation-block;
+    border-style: dashed;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(165, 69, 69, 0.904);
+}
+
+
+@keyframes animation-block {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.second__animation {
+    margin-right: 150px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-name: reverse-block;
+    border-style: dashed;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(77, 69, 165, 0.904);
+}
+
+@keyframes reverse-block {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+.third__animation {
+    margin-right: 30px;
+    display: inline-block;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-direction:alternate;
+    animation-name:cut-block;
+    border-style: dashed;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(69, 165, 119, 0.904);
+}
+
+@keyframes cut-block {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+
+.translate__animation {
+    display: inline-block;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-direction:normal;
+    animation-name:translate-bock;
+    border-style: dashed;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(165, 69, 109, 0.904);
+}
+
+@keyframes translate-bock {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(100px,0);
+    }
+}
